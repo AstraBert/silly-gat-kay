@@ -28,3 +28,6 @@ Added `cmake`.
 
 Added `poolfstat` to the `R` conda environment.
 
+### v0.6.0
+
+Added `cowplot` and `rshape2` to the `R` conda environment.
