@@ -1,4 +1,5 @@
-# latest
+# v0.7.0
+
 FROM astrabert/silly-gat-kay:latest
 
 WORKDIR /gatk_modified
