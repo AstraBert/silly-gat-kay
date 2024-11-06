@@ -30,8 +30,12 @@ Added `poolfstat` to the `R` conda environment.
 
 ### v0.6.0
 
-Added `cowplot` and `rshape2` to the `R` conda environment.
+Added `vcfR`, `cowplot` and `rshape2` to the `R` conda environment.
 
 ### v0.7.0
 
 Added `polars` and `pyarrow` to the `python_deps` conda environment.
+
+### v0.7.1
+
+Added `ComolexHeatmap` to the `R` conda environment.

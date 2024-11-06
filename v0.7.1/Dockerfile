@@ -1,4 +1,4 @@
-# latest
+# v0.7.1
 
 FROM astrabert/silly-gat-kay:latest
 
