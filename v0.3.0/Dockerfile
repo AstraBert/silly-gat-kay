@@ -8,4 +8,4 @@ RUN bash /gatk_modified/conda_install_for_gatk/install_python_deps.sh
 
 ENTRYPOINT [ "/bin/bash" ]
 
-# sudo docker build . -f Dockerfile -t astrabert/silly-gat-kay:latest -t astrabert/silly-gat-kay:0.3.0
+# sudo docker build . -f Dockerfile -t astrabert/silly-gat-kay:0.3.0

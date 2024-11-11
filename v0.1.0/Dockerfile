@@ -13,4 +13,4 @@ RUN bash /gatk_modified/conda_install_for_gatk/install_platypus.sh
 RUN bash /gatk_modified/conda_install_for_gatk/install_picard.sh
 
 ENTRYPOINT [ "/bin/bash" ]
-# sudo docker build . -f Dockerfile -t astrabert/silly-gat-kay:latest -t astrabert/silly-gat-kay:0.1.0
+# sudo docker build . -f Dockerfile -t astrabert/silly-gat-kay:0.1.0

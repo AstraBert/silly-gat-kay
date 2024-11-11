@@ -39,3 +39,8 @@ Added `polars` and `pyarrow` to the `python_deps` conda environment.
 ### v0.7.1
 
 Added `ComolexHeatmap` to the `R` conda environment.
+
+### v0.8.0
+
+Added `abcrf`, `MASS` and `ranger` to the `R` conda environment.
+Added `sra-tools` to the `gatk_modified` conda environment.
