@@ -38,9 +38,16 @@ Added `polars` and `pyarrow` to the `python_deps` conda environment.
 
 ### v0.7.1
 
-Added `ComolexHeatmap` to the `R` conda environment.
+Added `ComplexHeatmap` to the `R` conda environment.
 
 ### v0.8.0
 
 Added `abcrf`, `MASS` and `ranger` to the `R` conda environment.
+
 Added `sra-tools` to the `gatk_modified` conda environment.
+
+### v0.9.0
+
+Added `exonerate` to the `gatk_modified` conda environment.
+
+Added new `freebayes-env` conda environment to run `freebayes` for variant calling.

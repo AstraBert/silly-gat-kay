@@ -1,3 +1,5 @@
+# v0.1.0
+
 FROM broadinstitute/gatk:latest
 
 WORKDIR /gatk_modified

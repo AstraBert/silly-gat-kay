@@ -17,6 +17,22 @@ You should run it in interactive mode, possibily mounting your local file system
 sudo docker run -v /path/to/your/project:/gatk_modified/drosophila-project -it astrabert/silly-gat-kay
 ```
 
+Otherwise, adjust the path to the data you want to mount inside your Docker image in [`env`](./.env) under `USERDATA_PATH` and then simply run:
+
+```bash
+docker compose up -d
+docker exec -it $(sudo docker ps -qf "name=drosophila_project_env") /bin/bash
+```
+
+Or, if you are on Linux/macOS:
+
+```bash
+bash compose.sh
+```
+
+
+You'll be put inside the container (a semi-isolated virtual machine) in which our Docker image is up and running, and you'll find all your mounted data under `/gatk_modified/userdata`.
+
 The virtual machine is based on broadinstitute/gatk and provides a fully equipped environment for the analysis, divided into three conda envs:
 
 - **gatk_modified**: contains all GATK dependencies, but also bwa-mem2 and cutadapt
@@ -24,6 +40,7 @@ The virtual machine is based on broadinstitute/gatk and provides a fully equippe
 - **platypus**: contains platypus-variants, a SNP-calling focused conda wrapper for Platypus
 - **R**: contains r-base platform for data analysis in R and the library poolfstat
 - **python_deps**: contains python3.11 and various libraries like pandas, biopython, pyyaml.
+- **freebayes-env**: contains freebayes to run variant calling.
 
 To activate the conda envs and deactivate them, run:
 
